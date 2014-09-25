@@ -1,0 +1,45 @@
+body {
+	letter-spacing: 0.035em;
+	line-height: 1.75em;
+}
+
+
+h1 {
+	font-size: 1.1em;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+h2 {
+	font-size: 1em;
+	margin-bottom: 0.75em;
+}
+
+
+#nav { text-align: right; }
+
+#nav a { margin-left: 2em; }
+
+
+#footer { margin: 3em 0 3em 0; }
+
+#masonry_grid { }
+
+.line {
+	width:530px;
+	display:inline-block;
+	margin-bottom:45px;
+}
+
+.flip-container, .flip-container img, .front, .back {
+	width:530px;
+	height:298px;
+}
+
+a h3 {
+	margin-top:25px;
+	margin-bottom:80px;
+}
+
+ul li { font-size:1em; }
+

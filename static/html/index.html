@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/static/js/ie_workaround.js"></script>
+
+	<script src="/static/js/skel.min.js">
+	{
+		prefix: "/static/css/style",  
+		normalizeCSS: true,
+		boxModel: "border",
+		grid: { gutters: 20 },
+		breakpoints: {
+			wide: { range: "1120-1200-", containers: 1120, grid: { gutters: 20 } }, 
+			narrow: { range: "320-1119", containers: 962, grid: {gutters:20 } }<!-- , -->
+			
+			}
+		}
+		</script>
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="/static/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="/static/js/lightbox.js"></script>
+	<script src="/static/js/masonry.pkgd.min.js"></script>
+	<script src="/static/js/myjs.js"></script><!--initializes masonry AND Note Game-->
+	
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link href="/static/css/lightbox.css" rel="stylesheet" />	
+	
+	<meta name="robots" content="index,follow"/>
+	<meta name="description" content="Front-End Developer/Designer located near Charlotte, NC"/>
+	<meta name="keywords" content="graphic, design, front, end, front-end, web, website, developer, designer, sharon, Sharon, hunter, Hunter"/>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>Sharon Hunter | Front-End Developer/Designer near Charlotte, NC</title>
+
+</head>
+
+<body>
+
+<!-- Start of Header -->
+
+<div id="full_width_gray_bar">
+	<div class="container">
+		<div id="header" class="row">
+			<img src="/static/img/newlogo.png" />
+		</div>
+	</div>
+</div>
+
+<!--End of Header-->
+
+	<div class="container">
+		<div class="12u">
+		 	<p>I am a junior front-end developer (looking for my first professional opportunity, by the way) who can custom code HTML5, CSS3, JavaScript and jQuery. I'm also comfortable with Sass and/or Less, and a current student at Tech Talent South where I am learning Ruby on Rails and web app development - I'll finish up in early September. Be on the lookout for a Rails app to be added to this page in the coming months. I also have graphic design experience and solid Photoshop and Illustrator skills.</p>
+ 			<p>Please use the form at the bottom of the page to get in touch!</p>
+ 			<hr />
+		</div>
+	</div>
+</div>
+
+<div class="container">	
+	<div class="row">
+		<section class="12u">
+			 <h1>Photoshop and Illustrator</h1>
+		</section>
+	</div>
+</div>
+		
+<!-- Masonry Image Grid -->
+
+<div class="container"> 
+	<div id="masonry_grid" class="row">
+	
+		
+		<div class="masonryitem w2"><a href="/static/img/CinemagraphMasonry.gif" data-lightbox="design" data-title="Photoshop:Cinemagraph"><img src="/static/img/CinemagraphMasonry.gif" /></a></div>
+		
+		<div class="masonryitem flowers"><a href="/static/img/flowerslightbox.jpg" data-lightbox="design" data-title="Photoshop: Spirograph Flowers"><img src="/static/img/flowers215.jpg" /></a></div>
+		
+		<div class="masonryitem"><a href="/static/img/sidebaradlightbox.jpg" data-lightbox="design" data-title="Illustrator: Sidebar Ad"><img src="/static/img/BBSidebar215.jpg" /></a></div>
+		
+		<div class="masonryitem"><a href="/static/img/symphonylightbox.jpg" data-lightbox="design" data-title="Illustrator: Poster"><img src="/static/img/symphony215.jpg" /></a></div> 
+		
+		<div class="masonryitem w2"><a href="/static/img/chalkboard.jpg" data-lightbox="design" data-title="Illustrator: Banner Ad"><img src="/static/img/chalkboard440.jpg" /></a></div> 
+
+		<div class="masonryitem"><a href="/static/img/orangelightbox.png" data-lightbox="design" data-title="Illustrator: Soda Label"><img src="/static/img/orangefinal215.png" /></a></div>
+		
+		
+		<div class="masonryitem w2"><a href="/static/img/plateadlightbox.jpg" data-lightbox="design" data-title="Photoshop: Banner Ad"><img src="/static/img/PlateAd440.jpg" /></a></div>
+
+		<div class="masonryitem"><a href="/static/img/bluelightbox.jpg" data-lightbox="design" data-title="Photoshop: Composite Image"><img src="/static/img/blue215.jpg" /></a></div>
+
+		<div class="masonryitem"><a href="/static/img/LuckyDogMockup.jpg" data-lightbox="design" data-title="Illustrator: Screen-Printed T-Shirt"><img src="/static/img/luckydog215.png" /></a></div>
+		
+		<div class="masonryitem w2"><a href="/static/img/FlyingCarpetLightbox.jpg" data-lightbox="design" data-title="Photoshop: Composite Image"><img src="/static/img/carpetmasonry.jpg" /></a></div> 
+		
+	</div>
+  <hr />
+</div> 
+
+<!-- End of Masonry Image Grid-->
+
+<!--Start of Note-Game-->
+
+<div class="container">	
+	<div class="row">
+		<section class="12u">
+			 <h1>JavaScript/jQuery UI Card Matching Game</h1>
+		</section>
+	</div>
+</div>
+
+<div class="container">
+	<section class="12u">
+		<div id="card_game_container" class="12u">
+			<h2 id="note-game-title">Treble Clef Note Match</h2>
+			<p>Place (drag) each note card on top of its matching letter card below.</p>
+			
+				<div id="note-game-content">
+		
+						<div id="defaultCardPile" class="hidden">
+							<img data-title="C" src="/static/img/C4Front.png" />
+							<img data-title="D" src="/static/img/D4Front.png" />
+					    	<img data-title="E" src="/static/img/E4Front.png" />
+					    	<img data-title="F" src="/static/img/F4Front.png" />
+					    	<img data-title="G" src="/static/img/G4Front.png" />
+						</div>
+					    
+					    <div id="cardPile"></div>
+					    
+					    <div id="defaultCardSlots" class="hidden">
+						    <img data-title="C" src="/static/img/C.png" />
+					    	<img data-title="D" src="/static/img/D.png" />
+					    	<img data-title="E" src="/static/img/E.png" />
+					    	<img data-title="F" src="/static/img/F.png" />
+					    	<img data-title="G" src="/static/img/G.png" />
+						</div>
+			    
+					<div id="cardSlots"></div>
+			
+					<div id="successMessage">
+						<h1>All correct!</h1>
+						<button id="note-game-button" onclick="init()">Play Again</button>
+				   </div>
+			   </div>
+		  </div>
+	</section>
+	<hr />
+</div>
+
+<!--End of Note-Game-->
+
+<div class="container">	
+	<div class="row">
+		<section class="12u">
+			  
+			  <h1>Full Sites</h1>
+			  <p>Hover (or touch) images below for more information about each site.</p>
+		</section>
+	</div>
+</div>
+
+<div class="container">	
+	<div class="flips">
+		<div class="row">
+			
+			<section class="6u">
+				<div class="flip-container">
+				  <div class="flipper">
+					  <div class="front">
+						  <img src="/static/img/barkdesktop.jpg" />
+					</div>
+						 
+					<div class="back">
+						<h3>Modified Shopify<br />E-Commerce Site</h3> 
+						 <ul>
+						 	<li>Created site design - colors, layout, fonts, UX</li>
+						 	<li>Added contact form and Google Analytics</li>
+						 	<li>Created all graphics</li>
+						 	<li>Created all t-shirt designs</li>
+						 </ul>
+					</div>
+				</div>
+			</div>
+			
+				<div class="line">
+					<p class="title">Bark and Bridle</p>
+					<a class="link" href="http://www.barkandbridle.com"><p>View live site</a></p>
+				</div>
+			</section>
+			
+				
+		<section class="6u">
+			<div class="flip-container">
+			  <div class="flipper">
+				  <div class="front">
+				  	 <img src="/static/img/outdoormobile.jpg" />
+				  </div>
+					 
+				 <div class="back">
+						 <h3>Site Concept:<br />Landscape Design Co.</h3>
+						  <ul>
+						  	<li>Coded entire site (HTML5 Boilerplate)</li>
+						  	<li>Added jQuery slideshow/carousel</li>
+						  	<li>Added jQuery dropdown nav elements</li>
+						  	<li>Responsive: 4 breakpoints/layouts</li>
+						 </ul>
+					</div>
+				 </div>
+			</div>
+		
+			<div class="line">
+				<p class="title">Site Concept: <br> Carolina Outdoor Transformations</p>
+				<a class="link"href="http://shunteroutdoor.appspot.com/static/html/index.html"><p>View live site</p></a>
+			</div>
+	    </section>
+	    
+	    <section class="6u">
+			<div class="flip-container">
+			  <div class="flipper">
+				  <div class="front">
+					   <img src="/static/img/bikeshoplaptop.jpg" />
+				 </div>
+					 
+				<div class="back">
+					 <h3>Bootstrap 3 Site</h3>
+					 	<ul>
+					 		<li>Created this site to get familiar with Bootstrap 3</li>
+					 		<li>Added Google map using Google Maps API</li>
+					 	</ul>
+				</div>
+			 </div>
+		</div>
+			
+			<div class="line">
+				<p class="title">Fifth Street Cycles</p>
+				<a class="link" href="http://shunter-bike-shop.appspot.com/static/html/index.html"><p>View live site</p></a>
+			</div>
+		
+		</section>
+
+	   
+	   <section class="6u">
+			<div class="flip-container">
+			  <div class="flipper">
+				  <div class="front">
+  					 <img src="/static/img/musicgamescomp2.jpg" />
+				  </div>
+					 
+				
+					<div class="back">
+						 <h3>JavaScript/jQuery Music Game</h3>
+						  <ul>
+						  	<li>Created and coded game from scratch</li>
+						  	<li>Created site design</li>
+						  	<li>Additional pages/games coming soon</li>
+						 </ul>
+					</div>
+				 </div>
+			</div>
+		
+			<div class="line">
+				<p class="title">Another JavaScript/jQuery Music Game</p>
+				<a class="link"href="http://music-design-game.appspot.com/"><p>View live site</p></a>
+			</div>
+	    </section>
+
+	   
+	   
+	   
+	   
+	   </div>
+	</div>
+	<hr />
+</div>
+
+				
+<!--end of Features-->
+
+<!-- Contact Section-->
+<!--
+<div class="container" >	
+	</div>
+-->
+
+<!-- Contact Form-->
+<div class="container" id="form-container">
+	<div class="row">
+		<section class="12u">
+			  <h1>Contact Me</h1>
+		</section>
+	</div>	
+	
+	<div class="row">
+		<section class="12u">			
+			<form id="contact_form">
+				<div class="row half">		
+						<div class="6u">
+							<label for="name">Name</label>
+							<input name="name" type="text">
+						</div>
+					
+						<div class="6u">
+							<label for="email">Email</label>
+							<input name="email" type="email">
+						</div>
+					</div>
+			
+					<div class="row">
+						<div class="12u">
+							<label for="subject">Subject</label>
+							<input name="subject" type="text">
+						</div>
+					</div>
+			
+					<div class="row">
+						<div class="12u">
+							<label for="message">Message</label>
+							<textarea name="message" type="text"></textarea>
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="12u">
+							<input id="submit" name="submit" type="submit" value="Send">
+						</div>
+				</div>
+			</form>
+		</section>
+	</div>
+ </div>
+ 
+ <div id="message-box">
+				<p>Thanks! Your message has been sent.</p>
+			</div>
+
+
+<!-- Footer -->
+	<div id="footer">
+		<p>&copy;2014 Sharon Hunter</p>
+	</div>
+<!--end of footer-->
+</body>
+
+</html>
+
+
+	

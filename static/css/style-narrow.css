@@ -1,0 +1,57 @@
+
+body {
+	font-size: 1em;
+	letter-spacing: 0.035em;
+	line-height: 1.75em;
+}
+
+h1 {
+	font-size: 1.1em;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+h2 {
+	font-size: 1em;
+	margin-bottom: 0.3em;
+}
+
+h3 { line-height:1.25em; }
+
+.container { padding: 0 2em 0 2em; }
+
+.button {
+	font-size: 1.25em;
+	padding: 0.75em 2em 0.75em 2em;
+}
+
+li {
+	font-size:0.9em;
+	line-height:1.2em;
+	padding-bottom: 5px;
+}
+
+#nav { text-align: right; }
+
+#nav a { margin-left: 2em; }
+
+
+#footer { margin: 3em 0 3em 0; }
+
+#masonry_grid { }
+
+.line {
+	width:435px;
+	display:inline-block;
+	margin-bottom:35px;
+}
+
+.flip-container, .flip-container img, .front, .back {
+	width:435px;
+	height:254px;
+}
+
+a h3 {
+	margin-top:25px;
+	margin-bottom:70px;
+}
