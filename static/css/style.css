@@ -12,6 +12,12 @@ h1, h2 {
 	font-weight: 300;
 }
 
+section h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size:1.4em;
+	margin-top:50px;
+}
+
 #header, #full_width_gray_bar {
 	background-image: url(/static/img/crossed_stripes.png); 
 	background-repeat: repeat;
@@ -22,7 +28,26 @@ h1, h2 {
 	border-bottom:8px solid #999;
 }
 
-#header img { margin-top:60px; }
+#logo { margin-top:60px; }
+
+.my-social {
+	-ms-transform: scale(0.7,0.7); /* IE 9 */
+    -webkit-transform: scale(0.7,0.7); /* Chrome, Safari, Opera */
+    transform: scale(0.7,0.7);
+	margin:75px -15px 0px 0px;
+	padding:0px;
+	float:right;
+}
+
+.my-social:nth-child(2){
+	margin-right:-30px;
+}
+
+.my-social:hover {
+	-ms-transform: scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Chrome, Safari, Opera */
+    transform: scale(0.8,0.8);
+}
 
 /*************************************MASONRY LAYOUT STARTS HERE***********************/
 #masonry_grid { margin-bottom:40px; } /*not including this even though empty breaks the layout and causes images to not be loaded*/
@@ -39,9 +64,9 @@ h1, h2 {
 
 .masonryitem.w2 { width:440px; }
 
-.container a img { border:2px solid transparent; }
+.container.masonry a img { border:2px solid transparent; }
 
-.container a:hover img { border: 2px solid #666; }
+.container.masonry a:hover img { border: 2px solid #666; }
 
 .fadeIn{
 	animation-name: fadeIn;
