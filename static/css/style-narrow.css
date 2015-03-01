@@ -40,6 +40,11 @@ li {
 
 #masonry_grid { }
 
+.flex {
+	width:435px;
+	height:300px;
+}
+
 .line {
 	width:435px;
 	display:inline-block;

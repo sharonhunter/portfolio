@@ -25,6 +25,11 @@ h2 {
 
 #masonry_grid { }
 
+.flex {
+	width:530px;
+	height:381px;
+}
+
 .line {
 	width:530px;
 	display:inline-block;
@@ -35,6 +40,8 @@ h2 {
 	width:530px;
 	height:298px;
 }
+
+
 
 a h3 {
 	margin-top:25px;

@@ -207,6 +207,11 @@ p.game-title {
 }
 
 /******************************FULL SITES AND FLIPS START HERE *************************************/
+.bordered {
+	border:1px solid #444;
+}
+
+
 
 /* entire container, keeps perspective (1000 is head-on) */
 .flip-container {
