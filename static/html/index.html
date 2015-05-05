@@ -109,101 +109,7 @@
 
 <!-- End of Masonry Image Grid-->
 
-<!--Start of Note-Game-->
 
-<div class="container">	
-	<div class="row">
-		<section class="12u">
-			 <h1>JavaScript/jQuery UI Card Matching Game</h1>
-		</section>
-	</div>
-</div>
-
-<div class="container">
-	<section class="12u">
-			<div id="card_game_container" class="12u">
-				<h1 class="game-title 12u">Treble Clef Note Match</h1>
-				<p class="game-title 12u">Place (drag) each note card on top of its matching letter card below.</p>
-				
-				<div id="note-game-content">
-				
-					<div id="successMessage">
-				       <h1>ALL CORRECT!</h1>
-				       <h3>(Click a setting below to play again.)</h3>
-					</div>
-				
-				  <!--set of images used for default setting-->
-					<div id="defaultCardPile" class="hidden">
-						<img data-title="C" src="/static/img/C4.png" />
-				    	<img data-title="D" src="/static/img/D4.png" />
-				    	<img data-title="E" src="/static/img/E4.png" />
-				    	<img data-title="F" src="/static/img/F4.png" />
-				    	<img data-title="G" src="/static/img/G4.png" />
-					</div>
-					
-					<!--set of images used for lines-only setting-->
-					<div id="linesCardPile" class="hidden">
-						<img data-title="C" src="/static/img/C4.png" />
-				    	<img data-title="E" src="/static/img/E4.png" />
-				    	<img data-title="G" src="/static/img/G4.png" />
-				    	<img data-title="B" src="/static/img/B4.png" />
-				    	<img data-title="F" src="/static/img/F5.png" />
-					</div>
-					
-					<!--set of images used for spaces-only setting-->
-					<div id="spacesCardPile" class="hidden">
-						<img data-title="D" src="/static/img/D4.png" />
-						<img data-title="F" src="/static/img/F4.png" />
-						<img data-title="A" src="/static/img/A4.png" />
-						<img data-title="C5" src="/static/img/C5.png" />
-						<img data-title="E5" src="/static/img/E5.png" />
-					</div>
-					
-				    
-				    <!--this is top div, set of cards with notes showing, populated by init()-->
-				    <div id="cardPile"></div>
-				    
-				    <!--this is the set of letter cards that will be shown for first round-->
-				    <div id="defaultCardSlots" class="hidden">
-					    <img data-title="C" src="/static/img/C.png" />
-				    	<img data-title="D" src="/static/img/D.png" />
-				    	<img data-title="E" src="/static/img/E.png" />
-				    	<img data-title="F" src="/static/img/F.png" />
-				    	<img data-title="G" src="/static/img/G.png" />
-					</div>
-				    
-				    <!--this is the set of letter cards that will be shown for lines-only setting-->
-				    <div id="linesCardSlots" class="hidden">
-					    <img data-title="C" src="/static/img/C.png" />
-				    	<img data-title="E" src="/static/img/E.png" />
-					    <img data-title="G" src="/static/img/G.png" />
-					    <img data-title="B" src="/static/img/B.png" />
-					    <img data-title="F" src="/static/img/F.png" />
-					</div>
-					
-					<!--this is the set of letter cards that will be shown for spaces-only setting-->
-				    <div id="spacesCardSlots" class="hidden">
-					    <img data-title="D" src="/static/img/D.png" />
-				    	<img data-title="F" src="/static/img/F.png" />
-					    <img data-title="A" src="/static/img/A.png" />
-					    <img data-title="C5" src="/static/img/C.png" />
-					    <img data-title="E5" src="/static/img/E.png" />
-					</div>
-		
-					<!--this is lower div, set of cards with letters showing, populated by init()-->
-				    <div id="cardSlots"></div>
-				
-				  <button type="button" id="default-button">Default Notes</button>
-				  <button type="button" id="lines-button">Line Notes</button>
-				  <button type="button" id="spaces-button">Space Notes</button>
-			   </div>
-			</div>
-		
-		</section>
-	<hr />
-</div>
-
-<!--End of Note-Game-->
 
 <div class="container">	
 	<div class="row">
@@ -212,7 +118,7 @@
 		</section>
 		<section class="6u">
 			<p class="intro-text">QRX is a paper prescription security product concept still under development. I created the site design and graphics, and was responsible for all UI/UX considerations and all front-end code; this included integration of a QR code library and custom print functionality. <br /><em>A live demo of the working product is available upon request.</em></p>
-			<a href="http://www.qrx-app.com"><p>View live site</a></p>
+			<a href="http://www.qrx-app.appspot.com"><p>View live site</a></p>
 
 		</section>
 		<section class="6u">
@@ -345,6 +251,102 @@
 	</div>
 	<hr />
 </div>
+
+<!--Start of Note-Game-->
+
+<div class="container">	
+	<div class="row">
+		<section class="12u">
+			 <h1>JavaScript/jQuery UI Card Matching Game</h1>
+		</section>
+	</div>
+</div>
+
+<div class="container">
+	<section class="12u">
+			<div id="card_game_container" class="12u">
+				<h1 class="game-title 12u">Treble Clef Note Match</h1>
+				<p class="game-title 12u">Place (drag) each note card on top of its matching letter card below.</p>
+				
+				<div id="note-game-content">
+				
+					<div id="successMessage">
+				       <h1>ALL CORRECT!</h1>
+				       <h3>(Click a setting below to play again.)</h3>
+					</div>
+				
+				  <!--set of images used for default setting-->
+					<div id="defaultCardPile" class="hidden">
+						<img data-title="C" src="/static/img/C4.png" />
+				    	<img data-title="D" src="/static/img/D4.png" />
+				    	<img data-title="E" src="/static/img/E4.png" />
+				    	<img data-title="F" src="/static/img/F4.png" />
+				    	<img data-title="G" src="/static/img/G4.png" />
+					</div>
+					
+					<!--set of images used for lines-only setting-->
+					<div id="linesCardPile" class="hidden">
+						<img data-title="C" src="/static/img/C4.png" />
+				    	<img data-title="E" src="/static/img/E4.png" />
+				    	<img data-title="G" src="/static/img/G4.png" />
+				    	<img data-title="B" src="/static/img/B4.png" />
+				    	<img data-title="F" src="/static/img/F5.png" />
+					</div>
+					
+					<!--set of images used for spaces-only setting-->
+					<div id="spacesCardPile" class="hidden">
+						<img data-title="D" src="/static/img/D4.png" />
+						<img data-title="F" src="/static/img/F4.png" />
+						<img data-title="A" src="/static/img/A4.png" />
+						<img data-title="C5" src="/static/img/C5.png" />
+						<img data-title="E5" src="/static/img/E5.png" />
+					</div>
+					
+				    
+				    <!--this is top div, set of cards with notes showing, populated by init()-->
+				    <div id="cardPile"></div>
+				    
+				    <!--this is the set of letter cards that will be shown for first round-->
+				    <div id="defaultCardSlots" class="hidden">
+					    <img data-title="C" src="/static/img/C.png" />
+				    	<img data-title="D" src="/static/img/D.png" />
+				    	<img data-title="E" src="/static/img/E.png" />
+				    	<img data-title="F" src="/static/img/F.png" />
+				    	<img data-title="G" src="/static/img/G.png" />
+					</div>
+				    
+				    <!--this is the set of letter cards that will be shown for lines-only setting-->
+				    <div id="linesCardSlots" class="hidden">
+					    <img data-title="C" src="/static/img/C.png" />
+				    	<img data-title="E" src="/static/img/E.png" />
+					    <img data-title="G" src="/static/img/G.png" />
+					    <img data-title="B" src="/static/img/B.png" />
+					    <img data-title="F" src="/static/img/F.png" />
+					</div>
+					
+					<!--this is the set of letter cards that will be shown for spaces-only setting-->
+				    <div id="spacesCardSlots" class="hidden">
+					    <img data-title="D" src="/static/img/D.png" />
+				    	<img data-title="F" src="/static/img/F.png" />
+					    <img data-title="A" src="/static/img/A.png" />
+					    <img data-title="C5" src="/static/img/C.png" />
+					    <img data-title="E5" src="/static/img/E.png" />
+					</div>
+		
+					<!--this is lower div, set of cards with letters showing, populated by init()-->
+				    <div id="cardSlots"></div>
+				
+				  <button type="button" id="default-button">Default Notes</button>
+				  <button type="button" id="lines-button">Line Notes</button>
+				  <button type="button" id="spaces-button">Space Notes</button>
+			   </div>
+			</div>
+		
+		</section>
+	<hr />
+</div>
+
+<!--End of Note-Game-->
 
 				
 <!--end of Features-->
