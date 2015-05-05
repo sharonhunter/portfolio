@@ -29,7 +29,10 @@ section h1 {
 	border-bottom:8px solid #999;
 }
 
-#logo { margin-top:60px; }
+#logo { 
+	margin-top:20px; 
+	margin-left:-15px;
+}
 
 .my-social {
 	-ms-transform: scale(0.7,0.7); /* IE 9 */
