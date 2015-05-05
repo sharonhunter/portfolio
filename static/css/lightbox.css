@@ -141,7 +141,7 @@ body:after {
 /* line 96, ../sass/lightbox.sass */
 .lb-dataContainer {
   position:relative;/*SHARON'S EDIT*/
-  top:500px;/*SHARON'S EDIT*/
+  top:100px;/*SHARON'S EDIT*/
   margin: 0 auto;
   padding-top: 5px;
   *zoom: 1;
