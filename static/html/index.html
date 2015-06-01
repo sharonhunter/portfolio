@@ -5,7 +5,6 @@
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="/static/js/ie_workaround.js"></script>
-
 	<script src="/static/js/skel.min.js">
 	{
 		prefix: "/static/css/style",  
@@ -24,8 +23,9 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
-	<link href="/static/css/lightbox.css" rel="stylesheet" />	
-	
+	<link href="/static/css/lightbox.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/static/css/d3.slider.css" />  
+    
 	<meta name="robots" content="index,follow"/>
 	<meta name="description" content="Front-End Developer/Designer located near Charlotte, NC"/>
 	<meta name="keywords" content="graphic, design, front, end, front-end, web, website, developer, designer, sharon, Sharon, hunter, Hunter, charlotte, Charlotte"/>
@@ -55,7 +55,7 @@
 
 	<div class="container">
 		<div class="12u">
-		 	<p class="intro-text">I'm a front-end developer who will be looking for a full-time position in the Charlotte area as of June 2015 (I'm under contract until then). My skills include HTML5, CSS3, Sass, JavaScript, jQuery and Ruby on Rails. I'm currently spending a lot of time with Rails, learning Angular, and creating data visualizations with d3.js. </p>
+		 	<p class="intro-text">I'm a front-end developer currently seeking a full-time position in the Charlotte area. My skills include HTML5, CSS3, Sass, JavaScript, jQuery and Ruby on Rails. I'm currently spending a lot of time with Rails, learning Angular, and exploring data visualizations with d3.js. </p>
  			<p class="intro-text">Please use the form at the bottom of the page to get in touch!</p>
  			<hr />
 		</div>
@@ -75,7 +75,6 @@
 <div class="container masonry"> 
 	<div id="masonry_grid" class="row">
 	
-		
 		<div class="masonryitem w2"><a href="/static/img/CinemagraphMasonry.gif" data-lightbox="design"data-title="Photoshop: Cinemagraph"><img src="/static/img/CinemagraphMasonry.gif" /></a></div>
 		
 		<div class="masonryitem flowers"><a href="/static/img/flowers215@2X.jpg" data-lightbox="design" data-title="Photoshop: Spirograph Flowers"><img src="/static/img/flowers215@2X.jpg" width="218" height="198"/></a></div>
@@ -87,7 +86,6 @@
 		<div class="masonryitem w2"><a href="/static/img/chalkboard.jpg" data-lightbox="design" data-title="Illustrator: Banner Ad"><img src="/static/img/chalkboard440@2X.png" width="444" height="198" /></a></div> 
 
 		<div class="masonryitem"><a href="/static/img/orangelightbox.png" data-lightbox="design" data-title="Illustrator: Soda Label"><img src="/static/img/orangesmash@2X.png" width="218" height="198" /></a></div>
-		
 		
 		<div class="masonryitem w2"><a href="/static/img/porsche-lightbox.jpg" data-lightbox="design" data-title="Photoshop: Photo Editing"><img src="/static/img/porsche-night444@2X.jpg" width="444" height="198"/></a></div>
 
@@ -104,8 +102,6 @@
 </div> 
 
 <!-- End of Masonry Image Grid-->
-
-
 
 <div class="container">	
 	<div class="row">
@@ -135,7 +131,6 @@
 <div class="container">	
 	<div class="flips">
 		<div class="row">
-			
 			<section class="6u">
 				<div class="flip-container">
 				  <div class="flipper">
@@ -209,18 +204,15 @@
 				<p class="title">Fifth Street Cycles</p>
 				<a class="link" href="http://shunter-bike-shop.appspot.com/static/html/index.html"><p>View live site</p></a>
 			</div>
-		
 		</section>
 
-	   
-	   <section class="6u">
+	    <section class="6u">
 			<div class="flip-container">
 			  <div class="flipper">
 				  <div class="front">
   					 <img src="/static/img/list-it6u.jpg" />
 				  </div>
 					 
-				
 					<div class="back">
 						 <h3>Rails 4 App</h3>
 						  <ul>
@@ -238,18 +230,43 @@
 				<a class="link"href="http://shunter-list-it.herokuapp.com" target="_parent"><p>View live site</p></a>
 			</div>
 	    </section>
-
-	   
-	   
-	   
-	   
-	   </div>
+		</div>
 	</div>
 	<hr />
 </div>
+<!--start of Map-->
+<div class="container">	
+	<div class="row">
+		<section class="12u">
+			<h1>d3.js : Unemployment Before and After 2008 Recession - Interactive Map</h1>
+        	<p><em>North and South Carolina, 2006 - 2014</em></p>
+				<p class="intro-text">This map shows the unemployment rates for each county for the years before, during, and after the 2008 recession.</p>
+		        <p class="intro-text">From 2000 until 2006 (prior to the recession), unemployment ranged from a low of 3.3% in North Carolina and 3.7% in South Carolina, to a high of 6.9% for North Carolina and a high of 7.0% for South Carolina.</p>
+		        <p class="intro-text">The rates shown on the map range from an overall low of 2.2% through an overall high of 23.5% during the period from 2006 - 2014.</p> 
+		        <p class="intro-text">* Data downloaded from Bureau of Labor Statistics, 2006 - 2014. * </p>
+		</section>
+	</div>
+</div>
 
+<div class="container">	
+	<div class="row">
+		<section class="12u">
+			<div id="map_container">
+      			<div id="map">
+        			<div id="map_key">
+			          <img src="/static/img/map_key_label.png" />
+			        </div>
+			        <button type="button" id="animate_map">ANIMATE DATA</button>
+			      	</div>
+      				<div id="slider"></div>
+      				<p>Drag slider above, or click anywhere within slider to view that time period.</p>
+				</div>
+			</div>
+		</section>
+		<hr />
+	</div>
+</div>
 <!--Start of Note-Game-->
-
 <div class="container">	
 	<div class="row">
 		<section class="12u">
@@ -337,22 +354,13 @@
 				  <button type="button" id="spaces-button">Space Notes</button>
 			   </div>
 			</div>
-		
 		</section>
 	<hr />
 </div>
-
 <!--End of Note-Game-->
-
-				
 <!--end of Features-->
 
 <!-- Contact Section-->
-<!--
-<div class="container" >	
-	</div>
--->
-
 <!-- Contact Form-->
 <div class="container" id="form-container">
 	<div class="row">
@@ -362,36 +370,36 @@
 	</div>	
 	
 	<div class="row">
-		<section class="12u">			
+		<section class="9u">			
 			<form id="contact_form">
 				<div class="row half">		
-						<div class="6u">
+						<div class="4u">
 							<label for="name">Name</label>
 							<input name="name" type="text">
 						</div>
 					
-						<div class="6u">
+						<div class="5u">
 							<label for="email">Email</label>
 							<input name="email" type="email">
 						</div>
 					</div>
 			
 					<div class="row">
-						<div class="12u">
+						<div class="9u">
 							<label for="subject">Subject</label>
 							<input name="subject" type="text">
 						</div>
 					</div>
 			
 					<div class="row">
-						<div class="12u">
+						<div class="9u">
 							<label for="message">Message</label>
 							<textarea name="message" type="text"></textarea>
 						</div>
 					</div>
 				
 					<div class="row">
-						<div class="12u">
+						<div class="9u">
 							<input id="submit" name="submit" type="submit" value="Send">
 						</div>
 				</div>
@@ -415,6 +423,11 @@
 	<script src="/static/js/masonry.pkgd.min.js"></script>
 	<script src="/static/js/myjs.js"></script><!--initializes masonry AND Note Game-->
 	<script src="/static/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="/static/js/d3.slider.js"></script>
+    <script src="/static/js/map_custom.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@ h1, h2 {
 section h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size:1.4em;
-	margin-top:50px;
+	margin-top:30px;
 	margin-bottom:5px;
 }
 
@@ -54,7 +54,7 @@ section h1 {
 }
 
 .intro-text {
-	font-size:15px;
+	font-size:16px;
 	line-height:140%;
 }
 /*************************************MASONRY LAYOUT STARTS HERE***********************/
@@ -124,7 +124,55 @@ section h1 {
 		opacity: 1.0;	
 	}		
 }
+/**************************** MAP STARTS HERE *****************************************/
+#map_container {
+  width:100%;
+  position:relative;
+}
 
+#map {
+  width:960px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+}
+
+#map_key {
+  float:left;
+  margin-top:50px;
+}
+
+/*button*/
+#animate_map {
+  padding:10px 15px;
+  border-radius:3px;
+  position:absolute;
+  bottom:-26px;
+  left:0px;
+  background-color:#87bc74;
+  color:#fff;
+  font-size:12px;
+
+}
+
+path.counties {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+path.states {
+  fill: none;
+  stroke:#000;
+  stroke-width: 1px;
+}
+
+#slider {
+  width:650px;
+  margin:0px auto 40px auto;
+  background-color:#888;
+}
 /*****************************NOTE GAME STARTS HERE ***********************************/
 
 #card_game_container {
@@ -195,8 +243,6 @@ p.game-title {
 	color:#fff;
 }
 
-
-
 #default-button, #lines-button, #spaces-button {
 	height:40px;
 	width:145px;
@@ -205,18 +251,13 @@ p.game-title {
 	border-radius: 5px;
 	background-color: #FFFFAA;
 	margin:16px 2px 12px 0px;
-	
 	text-transform: uppercase;
 }
 
 /******************************FULL SITES AND FLIPS START HERE *************************************/
-.bordered {
-	border:1px solid #444;
-}
-
-
-
+.bordered { border:1px solid #444; }
 /* entire container, keeps perspective (1000 is head-on) */
+
 .flip-container {
 	-webkit-perspective: 1000;
     -moz-perspective:1000;
