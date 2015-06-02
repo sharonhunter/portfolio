@@ -145,15 +145,14 @@ section h1 {
 
 /*button*/
 #animate_map {
-  padding:10px 15px;
   border-radius:3px;
   position:absolute;
-  bottom:-26px;
-  left:0px;
   background-color:#87bc74;
   color:#fff;
   font-size:12px;
-
+  padding:7px 10px;
+  bottom:40px;
+  left:0px;
 }
 
 path.counties {
@@ -170,9 +169,11 @@ path.states {
 
 #slider {
   width:650px;
-  margin:0px auto 40px auto;
+  margin:0px auto 30px auto;
   background-color:#888;
 }
+
+.centered { text-align:center; }
 /*****************************NOTE GAME STARTS HERE ***********************************/
 
 #card_game_container {
@@ -184,17 +185,11 @@ path.states {
 	text-align: center; /*this on parent centers all child elems too*/
 }
 
-#cardPile, #cardSlots {
-	min-width:800px;
-}
+#cardPile, #cardSlots { min-width:800px;}
 
-.hidden {
-	display:none;
-}
+.hidden { display:none; }
 
-#note-game-content {
-	position:relative;
-}
+#note-game-content { position:relative; }
 
 #note-game-content img {
 	border-radius:8px;
@@ -207,12 +202,11 @@ h1.game-title {
 	color:#444;
 	font-weight:400;
 	font-size:22px;
-	/*margin-bottom:10px;*/
 }
 
 p.game-title { 
 	margin: -10px 0px 25px 0px;
-	font-size:14px;
+	font-size:16px;
 	color:#444;
 }
 
@@ -373,7 +367,7 @@ input, select, textarea {
 	box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025);
 }
 
-textarea { height: 15em; }
+textarea { height: 8em; }
 
 input:focus, textarea:focus {
 	border:1px solid #97d6eb;
@@ -381,14 +375,15 @@ input:focus, textarea:focus {
 
 #submit {
 	width:127px;
-	height:48px;
+	height:38px;
 	border:none;
 	color:#fff;
 	opacity:0.7;
 	background-image: url(/static/img/crossed_stripes.png);
-	margin-top:20px;
+	margin-top:16px;
 	cursor:pointer;
 	text-align: center;
+	padding:0px;
 }
 
 #submit:hover { opacity:0.6; }
