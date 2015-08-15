@@ -51,6 +51,13 @@ section h1 {
 	font-size:16px;
 	line-height:140%;
 }
+
+.gray-bkgd {
+	background-color: #dedede; 
+	padding:42px 0px 32px 0px;
+}
+
+.space-out { padding-top: 16px; }
 /*************************************MASONRY LAYOUT STARTS HERE***********************/
 #masonry_grid { margin-bottom:40px; } /*not including this even though empty breaks the layout and causes images to not be loaded*/
 
@@ -69,6 +76,7 @@ section h1 {
 .container.masonry a img { border:2px solid transparent; }
 
 .container.masonry a:hover img { border: 2px solid #666; }
+
 
 .fadeIn{
 	animation-name: fadeIn;
